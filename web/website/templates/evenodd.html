@@ -1,0 +1,16 @@
+{% include 'header.html'%}
+{% load static %}
+<html>
+    <head>
+    </head>
+    <title>evenodd</title>
+    <body>
+        <div class="main">
+        <form action="" method="POST">{% csrf_token %}
+            Value1:<input name="Value" id="Value1" type="text" placeholder="Value1"/><br>
+            <button type="submit">Even/Odd</button>
+                <input type="output" value="{{output}}"/>
+            </form>
+        </div>
+    </body>
+    </html>
